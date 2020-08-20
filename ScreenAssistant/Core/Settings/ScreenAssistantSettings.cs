@@ -24,10 +24,10 @@ namespace TiqSoft.ScreenAssistant.Core.Settings
         private static readonly SettingsController<ScreenAssistantSettings> SettingsController;
         internal static ScreenAssistantSettings Settings => SettingsController.Settings;
 
-        private float _sensitivityScale = 1;
+        private float _sensitivityScale = 2.6f;
         private float _brightnessScale = 1;
         private bool _lockToGameWindow = true;
-        private bool _fullScreenMode;
+        private bool _fullScreenMode = true;
         private string _selectedGameName = "Apex Legends";
         private char _startKey = 'L';
         private KeyModifier _startModifier = KeyModifier.Ctrl;
@@ -41,8 +41,8 @@ namespace TiqSoft.ScreenAssistant.Core.Settings
 
         [PropertyMember, PropertyGroup(RecoilGroup)]
         [DisplayName("Sensitivity adjustment")]
-        [SliderLimits(0.1f, 5)]
-        [DefaultValue(3)]
+        [SliderLimits(0.1f, 5f)]
+        [DefaultValue(2.6f)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public float SensitivityScale
         {

@@ -35,7 +35,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         RE45 = 1 << 10,
         [WeaponData("P2020", 3, "P2o2o")]
         P2020 = 1 << 11,
-        [WeaponData("R-301", 5, "R-3 Ol", "9-501")]
+        [WeaponData("R-301", 4, "R-3 Ol", "9-501")]
         R301 = 1 << 12,
         [WeaponData("R-99", 0, "9-99", "R - SEI", "R-SEI")]
         R99 = 1 << 13,
@@ -57,9 +57,9 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         LStar = 1 << 21,
         [WeaponData("Charge Rifle", 2, "CHARGEDRIFLE", "CHARGERIFLE")]
         ChargedRifle = 1 << 22,
-        [WeaponData("Sentinel", 3, "SENTINEL")]
+        [WeaponData("Sentinel", 3)]
         Sentinel = 1 << 23,
-        [WeaponData("Volt", 4, "VOLT")]
+        [WeaponData("Volt", 4)]
         Volt = 1 << 24
     }
 }

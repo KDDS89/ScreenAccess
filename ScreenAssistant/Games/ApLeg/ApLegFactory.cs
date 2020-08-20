@@ -112,6 +112,10 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
                 case WeaponAL.Unknown:
                 case WeaponAL.EVA8Auto:
                 case WeaponAL.Mozambique:
+                case WeaponAL.Sentinel:
+                case WeaponAL.Volt:
+                    result = new Volt(inGameName, 1.5, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.P2020:
                     result = new RegularAdjustmentWeapon(inGameName, 2, recognizedName, numOfMods);
                     break;
