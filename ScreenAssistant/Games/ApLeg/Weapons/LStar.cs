@@ -11,7 +11,7 @@
         {
             double horizontalOffset;
             var verticalOffset = Rnd.NextDouble() * (2) + 5;
-            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 30);
+            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 23);
             if (shotNumber < 7)
             {
                 horizontalOffset = Rnd.NextDouble() * 1 + 1.5;

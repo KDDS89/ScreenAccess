@@ -26,7 +26,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
         {
             double horizontalOffset;
             double verticalOffset;
-            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 80);
+            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 48);
             if (shotNumber <= 10)
             {
                 horizontalOffset = 0;

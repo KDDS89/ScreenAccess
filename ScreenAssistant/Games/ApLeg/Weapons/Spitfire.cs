@@ -10,7 +10,7 @@
 
         public override double AdjustMouse(int shotNumber)
         {
-            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 65);
+            this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 55);
 
             double horizontalOffset;
             if (shotNumber <= 3)

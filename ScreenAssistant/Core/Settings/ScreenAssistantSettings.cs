@@ -29,9 +29,9 @@ namespace TiqSoft.ScreenAssistant.Core.Settings
         private bool _lockToGameWindow = true;
         private bool _fullScreenMode;
         private string _selectedGameName = "Apex Legends";
-        private char _startKey = 'K';
+        private char _startKey = 'L';
         private KeyModifier _startModifier = KeyModifier.Ctrl;
-        private bool _muteSound = true;
+        private bool _muteSound = false;
 
         static ScreenAssistantSettings()
         {
@@ -42,7 +42,7 @@ namespace TiqSoft.ScreenAssistant.Core.Settings
         [PropertyMember, PropertyGroup(RecoilGroup)]
         [DisplayName("Sensitivity adjustment")]
         [SliderLimits(0.1f, 5)]
-        [DefaultValue(1)]
+        [DefaultValue(3)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public float SensitivityScale
         {
@@ -132,7 +132,7 @@ namespace TiqSoft.ScreenAssistant.Core.Settings
 
         [PropertyMember, PropertyGroup(ApplicationSettings)]
         [DisplayName("Start/End key binding key")]
-        [DefaultValue('K')]
+        [DefaultValue('L')]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)]
         public char StartKey
         {

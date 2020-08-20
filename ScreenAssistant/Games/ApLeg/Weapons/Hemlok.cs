@@ -34,7 +34,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
                 this._fastShots = 0;
             }
 
-            var fastShotAdjustment = 1 - CalculateAdjustment(this._fastShots, 12);
+            var fastShotAdjustment = 1 - CalculateAdjustment(this._fastShots, 3);
 
             var verticalOffset = (9d + -5d * fastShotAdjustment) * Math.Min(Math.Abs(1 - msFromLastShot / 600), 1);
             var horizontalOffset = (2.5d + 2d * fastShotAdjustment) * Math.Min(Math.Abs(1 - msFromLastShot / 300), 1);
