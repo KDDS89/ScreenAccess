@@ -9,14 +9,33 @@
 
         public override double AdjustMouse(int shotNumber)
         {
+            double horizontalOffset;
+            double verticalOffset;
             this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 15);
+
             var hAdj = shotNumber > 10 ? 3 : -1;
-            var horizontalOffset = hAdj * (Rnd.NextDouble() * 1 + 1);
-            if (this.AdjustmentCoefficient < 0.001)
+
+            if (shotNumber >= 15)
             {
+                verticalOffset = Rnd.NextDouble() + 2d; 
                 horizontalOffset = 0;
             }
-            var verticalOffset = Rnd.NextDouble() + 4d;
+            else if (shotNumber >= 22)
+            {
+                verticalOffset = Rnd.NextDouble() + 1d;
+                horizontalOffset = 0.5 * (Rnd.NextDouble() * 1 + 1);
+            }
+            else if (shotNumber >= 26)
+            {
+                verticalOffset = Rnd.NextDouble() + 2d;
+                horizontalOffset = 2 * (Rnd.NextDouble() * 1 + 1);
+            }
+            else
+            {
+                verticalOffset = Rnd.NextDouble() + 4d; 
+                horizontalOffset = hAdj * (Rnd.NextDouble() * 1 + 1);
+            }
+
             this.MoveMouse(horizontalOffset, verticalOffset);
 
             return this.GetAdjustmentTime(1d);
