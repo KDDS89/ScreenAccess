@@ -39,8 +39,6 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
                     horizontalOffset = Rnd.NextDouble() + 2d;
                 }
 
-                //horizontalOffset = Rnd.NextDouble() * 2 - 1;
-                //verticalOffset = Rnd.NextDouble() + 5.5d;
                 this.MoveMouse(horizontalOffset, verticalOffset);
             }
 
