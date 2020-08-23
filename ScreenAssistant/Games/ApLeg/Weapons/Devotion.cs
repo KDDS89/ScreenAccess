@@ -27,40 +27,40 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
             double horizontalOffset;
             double verticalOffset;
             this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 48);
-            if (shotNumber <= 10)
+            if (shotNumber <= 4)
             {
+                verticalOffset = Rnd.NextDouble() + 10.5d;
                 horizontalOffset = 0;
+            }
+            else if (shotNumber <= 10)
+            {
                 verticalOffset = Rnd.NextDouble() + 7;
+                horizontalOffset = Rnd.NextDouble() + 3;
             }
             else if (shotNumber <= 15)
             {
                 verticalOffset = Rnd.NextDouble() + 2;
-                horizontalOffset = Rnd.NextDouble() + 4;
+                horizontalOffset = Rnd.NextDouble() + 3;
             }
             else if (shotNumber <= 18)
             {
                 verticalOffset = 0;
-                horizontalOffset = Rnd.NextDouble() + 3;
+                horizontalOffset = Rnd.NextDouble() + 2;
             }
-            else if (shotNumber <= 20)
+            else if (shotNumber <= 27)
             {
-                verticalOffset = Rnd.NextDouble() + 2;
+                verticalOffset = Rnd.NextDouble() + 3;
                 horizontalOffset = 0;
             }
-            else if (shotNumber <= 22)
+            else if (shotNumber <= 38)
             {
-                verticalOffset = Rnd.NextDouble() + 2;
-                horizontalOffset = -1 * (Rnd.NextDouble() + 1);
-            }
-            else if (shotNumber <= 25)
-            {
-                verticalOffset = Rnd.NextDouble() + 2;
-                horizontalOffset = 0;
+                verticalOffset = Rnd.NextDouble() + 3;
+                horizontalOffset = Rnd.NextDouble() - 6;
             }
             else
             {
-                verticalOffset = Rnd.NextDouble() + 2;
-                horizontalOffset = -1 * (Rnd.NextDouble() + 2);
+                verticalOffset = Rnd.NextDouble() + 3;
+                horizontalOffset = Rnd.NextDouble() +2;
             }
 
             this.MoveMouse(horizontalOffset, verticalOffset);

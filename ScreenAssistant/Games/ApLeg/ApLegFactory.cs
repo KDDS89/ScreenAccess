@@ -65,11 +65,23 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
             switch (weaponType)
             {
                 case WeaponAL.Wingman:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.MASTIFF:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.KRABER:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.Longbow:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.Peacekeeper:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.TripleTake:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.ChargedRifle:
                     result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
                     break;
@@ -110,14 +122,22 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
                     result = new Spitfire(inGameName, recognizedName, numOfMods);
                     break;
                 case WeaponAL.Unknown:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.EVA8Auto:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.Mozambique:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.Sentinel:
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 case WeaponAL.Volt:
                     result = new Volt(inGameName, 1.5, recognizedName, numOfMods);
                     break;
                 case WeaponAL.P2020:
-                    result = new RegularAdjustmentWeapon(inGameName, 2, recognizedName, numOfMods);
+                    result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
