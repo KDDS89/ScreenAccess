@@ -13,7 +13,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
     {
         [WeaponData("", 0, " ")]
         Unknown = 1 << 0,
-        [WeaponData("HAVOK", 4, "HAVUC")]
+        [WeaponData("HAVOC", 4, "HAVUC")]
         Havoc = 1 << 1,
         [WeaponData("TRIPLE TAKE", 3)]
         TripleTake = 1 << 2,

@@ -14,9 +14,33 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
             var notOffsettingDelay = this.GetModuleType(3) == WeaponModuleType.Legendary ? 0 : 6;
             if (shotNumber > notOffsettingDelay)
             {
+                double horizontalOffset;
+                double verticalOffset; 
                 this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 36);
-                var horizontalOffset = Rnd.NextDouble() * 2 - 1;
-                var verticalOffset = Rnd.NextDouble() + 5.5d;
+
+                if (shotNumber < 12)
+                {
+                    verticalOffset = Rnd.NextDouble() + 9d;
+                    horizontalOffset = Rnd.NextDouble() - 1d;
+                }
+                else if (shotNumber < 20)
+                {
+                    verticalOffset = Rnd.NextDouble();
+                    horizontalOffset = Rnd.NextDouble() - 3d;
+                }
+                else if (shotNumber < 28)
+                {
+                    verticalOffset = Rnd.NextDouble() + 4d;
+                    horizontalOffset = 0;
+                }
+                else
+                {
+                    verticalOffset = Rnd.NextDouble() + 20d;
+                    horizontalOffset = Rnd.NextDouble() + 2d;
+                }
+
+                //horizontalOffset = Rnd.NextDouble() * 2 - 1;
+                //verticalOffset = Rnd.NextDouble() + 5.5d;
                 this.MoveMouse(horizontalOffset, verticalOffset);
             }
 
