@@ -139,6 +139,9 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
                 case WeaponAL.P2020:
                     result = new NonAdjustableWeapon(inGameName, 0, recognizedName, numOfMods);
                     break;
+                case WeaponAL.Minigun:
+                    result = new Minigun(inGameName, 0, recognizedName, numOfMods);
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

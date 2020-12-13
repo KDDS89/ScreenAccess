@@ -23,7 +23,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         Flatline = 1 << 4,
         [WeaponData("HEMLOK", 4, "HEMLUH")]
         Hemlok = 1 << 5,
-        [WeaponData("PROWLER", 4, "DRUWLEP")]
+        [WeaponData("PROWLER", 0, "DRUWLEP")]
         Prowler = 1 << 6,
         [WeaponData("LONGBOW", 5, "LUNGBUW")]
         Longbow = 1 << 7,
@@ -31,13 +31,13 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         Spitfire = 1 << 8,
         [WeaponData("WINGMAN", 3)]
         Wingman = 1 << 9,
-        [WeaponData("RE-45", 3, "p E-z15")]
+        [WeaponData("RE-45", 4, "p E-z15")]
         RE45 = 1 << 10,
         [WeaponData("P2020", 3, "P2o2o")]
         P2020 = 1 << 11,
         [WeaponData("R-301", 4, "R-3 Ol", "9-501")]
         R301 = 1 << 12,
-        [WeaponData("R-99", 0, "9-99", "R - SEI", "R-SEI")]
+        [WeaponData("R-99", 4, "9-99", "R - SEI", "R-SEI")]
         R99 = 1 << 13,
         [WeaponData("ALTERNATOR", 4)]
         Alternator = 1 << 14,
@@ -60,6 +60,8 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         [WeaponData("SENTINEL", 3, "SFNTINFL")]
         Sentinel = 1 << 23,
         [WeaponData("VOLT", 4)]
-        Volt = 1 << 24
+        Volt = 1 << 24,
+        [WeaponData("Minigun", 0)]
+        Minigun = 1 << 25
     }
 }

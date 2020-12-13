@@ -11,7 +11,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
 
         public override double AdjustMouse(int shotNumber)
         {
-            var notOffsettingDelay = this.GetModuleType(3) == WeaponModuleType.Legendary ? 0 : 6;
+            var notOffsettingDelay = this.GetModuleType(3) == WeaponModuleType.Legendary ? 0 : 5;
             if (shotNumber > notOffsettingDelay)
             {
                 double horizontalOffset;
@@ -20,22 +20,22 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg.Weapons
 
                 if (shotNumber < 12)
                 {
-                    verticalOffset = Rnd.NextDouble() + 9d;
+                    verticalOffset = Rnd.NextDouble() + 6d;
                     horizontalOffset = Rnd.NextDouble() - 1d;
                 }
                 else if (shotNumber < 20)
                 {
                     verticalOffset = Rnd.NextDouble();
-                    horizontalOffset = Rnd.NextDouble() - 3d;
+                    horizontalOffset = Rnd.NextDouble() - 2d;
                 }
                 else if (shotNumber < 28)
                 {
-                    verticalOffset = Rnd.NextDouble() + 4d;
+                    verticalOffset = Rnd.NextDouble();
                     horizontalOffset = 0;
                 }
                 else
                 {
-                    verticalOffset = Rnd.NextDouble() + 20d;
+                    verticalOffset = Rnd.NextDouble() + 30d;
                     horizontalOffset = Rnd.NextDouble() + 2d;
                 }
 

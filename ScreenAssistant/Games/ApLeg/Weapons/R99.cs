@@ -20,11 +20,11 @@
             else if (shotNumber < 16)
             {
                 verticalOffset = 0;
-                horizontalOffset = Rnd.NextDouble() * -1 - 1;
+                horizontalOffset = Rnd.NextDouble() * -1 - 1; 
             }
             else if (shotNumber < 20)
             {
-                verticalOffset = Rnd.NextDouble() - 1;
+                verticalOffset = 0;
                 horizontalOffset = 0;
             }
             else
