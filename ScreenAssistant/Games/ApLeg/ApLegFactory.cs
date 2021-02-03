@@ -116,7 +116,7 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
                     result = new Alternator(inGameName, 2, recognizedName, numOfMods);
                     break;
                 case WeaponAL.G7Scout:
-                    result = new G7Scout(inGameName, 2, recognizedName, numOfMods);
+                    result = new G7Scout(inGameName, 0, recognizedName, numOfMods);
                     break;
                 case WeaponAL.Spitfire:
                     result = new Spitfire(inGameName, recognizedName, numOfMods);
@@ -141,6 +141,9 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
                     break;
                 case WeaponAL.Minigun:
                     result = new Minigun(inGameName, 0, recognizedName, numOfMods);
+                    break;
+                case WeaponAL.Repeater:
+                    result = new Repeater(inGameName, 0, recognizedName, numOfMods);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

@@ -13,43 +13,71 @@
             this.AdjustmentCoefficient = CalculateAdjustment(shotNumber, 55);
 
             double horizontalOffset;
-            if (shotNumber <= 3)
+            double verticalOffset;
+            if (shotNumber <= 8)
             {
-                horizontalOffset = Rnd.NextDouble() * 0.4d + 0.25d;
+                horizontalOffset = Rnd.NextDouble() * 0.1d + 1d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 4d;
             }
-            else if (shotNumber <= 7)
+            else if (shotNumber <= 10)
             {
-                horizontalOffset = Rnd.NextDouble() + 0.75d;
+                horizontalOffset = -1 * (Rnd.NextDouble() * 0.1d + 1.8d);
+                verticalOffset = Rnd.NextDouble() * 0;
             }
             else if (shotNumber <= 12)
             {
-                horizontalOffset = -1 * (Rnd.NextDouble() + 2.35d);
+                horizontalOffset = Rnd.NextDouble() * 0.1d + 0.2d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 3d;
             }
-            else if (shotNumber < 22)
+            else if (shotNumber < 15)
             {
-                horizontalOffset = Rnd.NextDouble() * 0.5d + 5.25d;
+                horizontalOffset = Rnd.NextDouble() * 0.1d + 3.5d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 1d;
+            }
+            else if (shotNumber < 19)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.1d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 4d;
+            }
+            else if (shotNumber < 21)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.1d + 4.5d;
+                verticalOffset = Rnd.NextDouble() * 0.2d;
+            }
+            else if (shotNumber < 32)
+            {
+                horizontalOffset = -1 * (Rnd.NextDouble() * 0.1d + 3.5d);
+                verticalOffset = Rnd.NextDouble() * 0.2d + 2d;
+            }
+            else if (shotNumber < 33)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.1d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 1d;
+            }
+            else if (shotNumber < 38)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.1d + 1.8d;
+                verticalOffset = Rnd.NextDouble() * 0.05d;
+            }
+            else if (shotNumber < 41)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.2d + 0.5d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 5.25d;
+            }
+            else if (shotNumber < 42)
+            {
+                horizontalOffset = Rnd.NextDouble() * 0.4d;
+                verticalOffset = Rnd.NextDouble() * 0.3d + 5d;
+            }
+            else if (shotNumber < 50)
+            {
+                horizontalOffset = -1 * (Rnd.NextDouble() * 0.1d + 2.5d);
+                verticalOffset = Rnd.NextDouble() * 0.3d + 4d;
             }
             else
             {
-                horizontalOffset = -1 * (Rnd.NextDouble() * 0.5d + 3.1d);
-            }
-
-            double verticalOffset;
-            if (shotNumber <= 5)
-            {
-                verticalOffset = Rnd.NextDouble() * 0.5d + 5.25d;
-            }
-            else if (shotNumber <= 15)
-            {
-                verticalOffset = Rnd.NextDouble() * 0.5d + 2.45d;
-            }
-            else if (shotNumber <= 22)
-            {
-                verticalOffset = 1;
-            }
-            else
-            {
-                verticalOffset = Rnd.NextDouble() * 0.5d + 1.35d;
+                horizontalOffset = Rnd.NextDouble() * 0.3d;
+                verticalOffset = Rnd.NextDouble() * 0.2d + 3d;
             }
 
             this.MoveMouse(horizontalOffset, verticalOffset);

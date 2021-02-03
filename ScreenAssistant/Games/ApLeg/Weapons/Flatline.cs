@@ -22,32 +22,32 @@
             else if (shotNumber < 7)
             {
                 verticalOffset = Rnd.NextDouble() + 5d;
-                horizontalOffset = Rnd.NextDouble() + 2d;
+                horizontalOffset = Rnd.NextDouble() + 1d;
             }
             else if (shotNumber < 11)
             {
                 verticalOffset = 0;
-                horizontalOffset = Rnd.NextDouble() - 3d;
+                horizontalOffset = -1d * (Rnd.NextDouble() + 2d);
             }
             else if (shotNumber < 16)
             {
                 verticalOffset = Rnd.NextDouble() + 2d;
-                horizontalOffset = Rnd.NextDouble() + 2d;
+                horizontalOffset = Rnd.NextDouble() + 1d;
             }
-            else if (shotNumber < 20)
+            else if (shotNumber < 21)
             {
                 verticalOffset = Rnd.NextDouble() + 2d;
-                horizontalOffset = Rnd.NextDouble() + 6d;
+                horizontalOffset = Rnd.NextDouble() + 2d;
             }
-            else if (shotNumber < 24)
+            else if (shotNumber < 23)
             {
-                verticalOffset = Rnd.NextDouble() + 4d;
-                horizontalOffset = Rnd.NextDouble() + 3d;
+                verticalOffset = Rnd.NextDouble() + 2d;
+                horizontalOffset = Rnd.NextDouble() + 8d;
             }
             else
             {
-                verticalOffset = Rnd.NextDouble() + 9d;
-                horizontalOffset = Rnd.NextDouble() - 7d;
+                verticalOffset = Rnd.NextDouble() + 12d;
+                horizontalOffset = -1d * (Rnd.NextDouble() + 6d);
             }
 
 

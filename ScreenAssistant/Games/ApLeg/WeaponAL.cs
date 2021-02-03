@@ -35,15 +35,15 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         RE45 = 1 << 10,
         [WeaponData("P2020", 3, "P2o2o")]
         P2020 = 1 << 11,
-        [WeaponData("R-301", 4, "R-3 Ol", "9-501")]
+        [WeaponData("R-301", 5, "R-3 Ol", "9-501")]
         R301 = 1 << 12,
         [WeaponData("R-99", 4, "9-99", "R - SEI", "R-SEI")]
         R99 = 1 << 13,
         [WeaponData("ALTERNATOR", 4)]
         Alternator = 1 << 14,
-        [WeaponData("G7 Scout", 5, "G7SCOUT")]
+        [WeaponData("G7 Scout", 4, "G7SCOUT")]
         G7Scout = 1 << 15,
-        [WeaponData("EVA-8 AUTO", 3)]
+        [WeaponData("EVA-8 AUTO", 2)]
         EVA8Auto = 1 << 16,
         [WeaponData("PEACEKEEPER", 0, "PEACEHEEDER")]
         Peacekeeper = 1 << 17,
@@ -57,11 +57,13 @@ namespace TiqSoft.ScreenAssistant.Games.ApLeg
         LStar = 1 << 21,
         [WeaponData("CHARGE RIFLE", 2, "CHARGEDRIFLE", "CHARGERIFLE")]
         ChargedRifle = 1 << 22,
-        [WeaponData("SENTINEL", 3, "SFNTINFL")]
+        [WeaponData("SENTINEL", 4, "SFNTINFL")]
         Sentinel = 1 << 23,
         [WeaponData("VOLT", 4)]
         Volt = 1 << 24,
         [WeaponData("Minigun", 0)]
-        Minigun = 1 << 25
+        Minigun = 1 << 25,
+        [WeaponData("30-30 Repeater", 3)]
+        Repeater = 1 << 26
     }
 }
